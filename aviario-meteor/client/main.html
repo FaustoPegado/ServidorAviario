@@ -1,0 +1,39 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aviario</title>
+</head>
+
+<body>
+  {{> navbar}}
+  <h1>Projeto Aviario</h1>
+  {{> home}}
+  
+</body>
+
+<template name="home">
+ 	<ul>
+      {{#each atuadores}}
+        {{> atuador}}
+      {{/each}}
+    </ul>
+
+</template>
+
+<template name="atuador">
+  <li>
+  	<h4>Atuador: {{tipo}} - Estado: {{estado}}</h4>
+  </li>
+   <button class="btn btn-success altera-estado">Ligar</button>
+</template>
+
+<template name="navbar">
+		<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        Aviario
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+</template>
