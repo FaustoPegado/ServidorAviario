@@ -1,0 +1,10 @@
+<div class="media">
+  <div class="media-left">
+    <input class = "altera-estado" type="image" src="/images/botao2.png" width = "80" height = "60" border = "0">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading white">{{tipo}}</h4>
+    <h4>Estado: {{estado}} - Pino Arduino: {{posicao}}
+                        Temperatura atual: {{temperaturaAtual}}</h4>
+  </div>
+</div>
